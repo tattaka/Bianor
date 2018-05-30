@@ -1,0 +1,130 @@
+Configuration	bianor
+STM32CubeMX 	4.25.1
+Date	05/30/2018
+MCU	STM32F405VGTx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC1	IN4	ADC1_IN4	PA4
+ADC1	IN5	ADC1_IN5	PA5
+ADC1	IN6	ADC1_IN6	PA6
+ADC1	IN7	ADC1_IN7	PA7
+ADC1	IN8	ADC1_IN8	PB0
+ADC1	IN9	ADC1_IN9	PB1
+ADC1	IN14	ADC1_IN14	PC4
+ADC1	IN15	ADC1_IN15	PC5
+ADC2	IN3	ADC2_IN3	PA3
+SPI1	Full-Duplex Master	SPI1_MISO	PB4
+SPI1	Full-Duplex Master	SPI1_MOSI	PB5
+SPI1	Full-Duplex Master	SPI1_SCK	PB3
+SPI3	Full-Duplex Master	SPI3_MISO	PC11
+SPI3	Full-Duplex Master	SPI3_MOSI	PC12
+SPI3	Full-Duplex Master	SPI3_SCK	PC10
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM1	PWM Generation CH1	TIM1_CH1	PA8
+TIM1	PWM Generation CH2	TIM1_CH2	PA9
+TIM1	PWM Generation CH3	TIM1_CH3	PA10
+TIM1	PWM Generation CH4	TIM1_CH4	PA11
+TIM3	Encoder Mode	TIM3_CH1	PC6
+TIM3	Encoder Mode	TIM3_CH2	PC7
+TIM4	Encoder Mode	TIM4_CH1	PD12
+TIM4	Encoder Mode	TIM4_CH2	PD13
+TIM12	PWM Generation CH1	TIM12_CH1	PB14
+USART1	Asynchronous	USART1_RX	PB7
+USART1	Asynchronous	USART1_TX	PB6
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+1	PE2	GPIO_Input	
+2	PE3	GPIO_Output	
+3	PE4	GPIO_Output	
+4	PE5	GPIO_Output	
+5	PE6	GPIO_Output	
+7	PC13-ANTI_TAMP	GPIO_Output	
+8	PC14-OSC32_IN	GPIO_Output	
+9	PC15-OSC32_OUT	GPIO_Output	
+12	PH0-OSC_IN	GPIO_Output	
+13	PH1-OSC_OUT	GPIO_Output	
+15	PC0	GPIO_Output	
+16	PC1	GPIO_Output	
+17	PC2	GPIO_Output	
+18	PC3	GPIO_Output	
+23	PA0-WKUP	GPIO_Output	
+24	PA1	GPIO_Output	
+25	PA2	GPIO_Output	
+26	PA3	ADC2_IN3	
+29	PA4	ADC1_IN4	
+30	PA5	ADC1_IN5	
+31	PA6	ADC1_IN6	
+32	PA7	ADC1_IN7	
+33	PC4	ADC1_IN14	
+34	PC5	ADC1_IN15	
+35	PB0	ADC1_IN8	
+36	PB1	ADC1_IN9	
+38	PE7	GPIO_Output	
+39	PE8	GPIO_Output	
+40	PE9	GPIO_Output	
+53	PB14	TIM12_CH1	
+55	PD8	GPIO_Output	
+56	PD9	GPIO_Output	
+57	PD10	GPIO_Output	
+58	PD11	GPIO_Output	
+59	PD12	TIM4_CH1	
+60	PD13	TIM4_CH2	
+61	PD14	GPIO_Output	
+62	PD15	GPIO_Output	
+63	PC6	TIM3_CH1	
+64	PC7	TIM3_CH2	
+65	PC8	GPIO_Output	
+66	PC9	GPIO_Output	
+67	PA8	TIM1_CH1	
+68	PA9	TIM1_CH2	
+69	PA10	TIM1_CH3	
+70	PA11	TIM1_CH4	
+71	PA12	GPIO_Output	
+72	PA13	GPIO_Output	
+77	PA15	GPIO_Output	
+78	PC10	SPI3_SCK	
+79	PC11	SPI3_MISO	
+80	PC12	SPI3_MOSI	
+87	PD6	GPIO_Input	
+88	PD7	GPIO_Output	
+89	PB3	SPI1_SCK	
+90	PB4	SPI1_MISO	
+91	PB5	SPI1_MOSI	
+92	PB6	USART1_TX	
+93	PB7	USART1_RX	
+95	PB8	GPIO_Input	
+96	PB9	GPIO_Input	
+97	PE0	GPIO_Input	
+98	PE1	GPIO_Input	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : bianor
+Project Folder : /Users/tattaka/Documents/workspace/bianor
+Toolchain / IDE : Makefile
+Firmware Package Name and Version : STM32Cube FW_F4 V1.21.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : Yes
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : Yes
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+

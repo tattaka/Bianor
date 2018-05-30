@@ -6,7 +6,7 @@
   ******************************************************************************
   ** This notice applies to any and all portions of this file
   * that are not between comment pairs USER CODE BEGIN and
-  * USER CODE END. Other portions of this file, whether 
+  * USER CODE END. Other portions of this file, whether
   * inserted by the user or by software development tools
   * are owned by their respective copyright owners.
   *
@@ -56,8 +56,8 @@ void MX_ADC1_Init(void)
   LL_GPIO_InitTypeDef GPIO_InitStruct;
   /* Peripheral clock enable */
   LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_ADC1);
-  
-  /**ADC1 GPIO Configuration  
+
+  /**ADC1 GPIO Configuration
   PA4   ------> ADC1_IN4
   PA5   ------> ADC1_IN5
   PA6   ------> ADC1_IN6
@@ -65,7 +65,7 @@ void MX_ADC1_Init(void)
   PC4   ------> ADC1_IN14
   PC5   ------> ADC1_IN15
   PB0   ------> ADC1_IN8
-  PB1   ------> ADC1_IN9 
+  PB1   ------> ADC1_IN9
   */
   GPIO_InitStruct.Pin = LL_GPIO_PIN_4|LL_GPIO_PIN_5|LL_GPIO_PIN_6|LL_GPIO_PIN_7;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_ANALOG;
@@ -82,7 +82,7 @@ void MX_ADC1_Init(void)
   GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
   LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-    /**Common config 
+    /**Common config
     */
   ADC_InitStruct.Resolution = LL_ADC_RESOLUTION_12B;
   ADC_InitStruct.DataAlignment = LL_ADC_DATA_ALIGN_RIGHT;
@@ -102,7 +102,7 @@ void MX_ADC1_Init(void)
   ADC_CommonInitStruct.Multimode = LL_ADC_MULTI_INDEPENDENT;
   LL_ADC_CommonInit(__LL_ADC_COMMON_INSTANCE(ADC1), &ADC_CommonInitStruct);
 
-    /**Configure Regular Channel 
+    /**Configure Regular Channel
     */
   LL_ADC_REG_SetSequencerRanks(ADC1, LL_ADC_REG_RANK_1, LL_ADC_CHANNEL_4);
 
@@ -118,16 +118,16 @@ void MX_ADC2_Init(void)
   LL_GPIO_InitTypeDef GPIO_InitStruct;
   /* Peripheral clock enable */
   LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_ADC2);
-  
-  /**ADC2 GPIO Configuration  
-  PA3   ------> ADC2_IN3 
+
+  /**ADC2 GPIO Configuration
+  PA3   ------> ADC2_IN3
   */
   GPIO_InitStruct.Pin = LL_GPIO_PIN_3;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_ANALOG;
   GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
   LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-    /**Common config 
+    /**Common config
     */
   ADC_InitStruct.Resolution = LL_ADC_RESOLUTION_12B;
   ADC_InitStruct.DataAlignment = LL_ADC_DATA_ALIGN_RIGHT;
@@ -143,7 +143,7 @@ void MX_ADC2_Init(void)
 
   LL_ADC_REG_SetFlagEndOfConversion(ADC2, LL_ADC_REG_FLAG_EOC_UNITARY_CONV);
 
-    /**Configure Regular Channel 
+    /**Configure Regular Channel
     */
   LL_ADC_REG_SetSequencerRanks(ADC2, LL_ADC_REG_RANK_1, LL_ADC_CHANNEL_3);
 
